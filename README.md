@@ -1,0 +1,3 @@
+# AMO-Physics
+# We are developing a user friendly webiste, where users can access information quickly about diatomic molecules.  
+# About the project: The project aims to make available the spectroscopic constants for diatomic molecules as well as Franck-Condon factors (relevant for laser cooling of molecules) to the users, from students to researchers, in a friendly and completely interactive way. Friendly because the user can straightforwardly retrieve spectroscopic data of diatomic molecules in a variety of formats compatible with analyzing software. The user, after registration, has the possibility of uploading new spectroscopic data. Therefore the project prompts the field of molecular spectroscopy through the information era paradigm that we live these days.
