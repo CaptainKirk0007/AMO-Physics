@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+  <title>The Diatomic Molecular Spectroscopy Database</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+
+<div class="logobar">
+  <a href="https://www.stonybrook.edu/" target="_blank">
+    <div class="left-section">
+      <img class="logo" src="./images/stony-brook-university-logo-horizontal-white-300.png">
+    </div></a>
+    <div class="right-section">
+      | The Diatomic Molecular Spectroscopy Database
+    </div>
+</div>
+
+<div class="backg"> 
+  <div class="home-dis">
+    <h1 class="hometitle">The DMS Database</h1>
+    <p class="homesub">Date/Time: <span id="datetime"></span></p>
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleString();
+      </script>
+    <p class="homedet">This database is devoted to the spectroscopic constants of polar diatomic molecules, taken from Huber and Herzberg's book, for the ground state and first excited states, as well as to the calculation of FCF's assuming a Morse potential shape for all the implied states.
+    </p>
+    <p class="homesta"><span class="statit">Website Layout(02gray):</span>  Yueqian Wang
+    </p>
+  </div>
+</div>
+
+<div id="navbar">
+  <a href="#default" id="logo">Train Your Machine Learning Modles</a> <!-- using the same as logo, please redo-->
+  <div id="navbar-right">
+    <a class="active" href="#home">Log In</a>
+    <a href="#contact">Sign Up</a>
+    <a href="#about">About</a>
+  </div>
+
+</div>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
+
+<div class="searchbar">
+  <img class="slogo" src="./images/molecule-icon-9331.png">
+  <p style="margin-left: 15px; font-size:15px; ">Put Your Molecule Here.  </p>
+</div>
+
+<div class="main">
+  <div class="heading">
+    <h1 class="section-header">Before you start <span class="sub-item">Introduction of DMS Database</span></h1>
+  </div>
+</div>
+
+<div class="datasheet">
+  <div class="sheet1">
+      <div>
+        <div class="chart">
+          <div style="width: 1px;">1</div>
+          <div style="width: 7px;">7</div>
+          <div style="width: 35px;">35</div>
+          <div style="width: 134px;">134</div>
+          
+        </div>  
+      </div>
+
+      <div>
+        <p>Information and etc.
+        </p>
+        <button class= "graymode"onclick="myFunction()">&#9789;</button>
+
+        <script>
+          function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+          }
+        </script>
+      </div>
+  </div>
+  
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+   <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['state', 'number'],
+          ['Sigma',   134],
+          ['Pi',   35],
+          ['Delta',  7],
+          ['Phi', 1],
+        ]);
+
+        var options = {
+          title: 'Statistics',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  
+  
+  <button type="button" class="collapsible">Pie Chart</button>
+  <div class="content">
+    
+    <div>
+      <p>Chart and etc.
+      </p>
+      <div id="piechart_3d" style=" height: 500px "></div>
+    </div>   
+  
+</div>
+<div class="parallax"></div> 
+<div class="main">
+  <div class="heading">
+    <h1 class="section-header">Contacts <span class="sub-item"> Team members</span></h1>
+    <p class="header1">Service provided by </p>
+    <h2 class="header2">Last update: 2023/Feb/6 </h2>
+    <p class="discription-heading">contributions</p>
+  </div>
+
+  
+
+</div>
+<div class="parallax2"></div>
+
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    
+</body>
+</html>
