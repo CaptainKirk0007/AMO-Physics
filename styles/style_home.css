@@ -492,3 +492,58 @@ h2 {
     color: rgb(255, 255, 255);
   }
 }
+
+@media screen and (max-width: 480px) {
+  /* Adjust logo size and margin */
+  .logobar img {
+    height: 40px;
+    margin: 5px;
+  }
+
+  /* Adjust right-section size and margin */
+  .right-section {
+    margin: 15px 0 0 10px;
+    font-size: 14px;
+  }
+
+  /* Adjust navbar logo size */
+  #navbar #logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Adjust navbar link padding */
+  #navbar a {
+    padding: 8px;
+  }
+
+  /* Adjust the font size for hometitle, homesub, and homedet */
+  .hometitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .homesub {
+    font-size: 12px;
+  }
+  .homedet {
+    font-size: 12px;
+  }
+
+  /* Adjust the search bar size and margin */
+  .searchbar {
+    margin: 10px 0;
+    height: 40px;
+  }
+
+  /* Adjust intro elements */
+  .intro {
+    width: 100%;
+  }
+
+  .introtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
