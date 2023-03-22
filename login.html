@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lan="en" and dir="Itr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log in</title>
-    <link rel="stylesheet" href="styles/loginstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/loginsystem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<form class="box" action="login.html" method="POST">
-    <h1>
-        Enter your username and password!
-    </h1>
-    <input type="text" name="" placeholder="Enter Username" id="username">
-    <input type="password" name="" placeholder="Enter Password" id="password">
-    <input type="submit" name="" value="Login" >
-</form>
-
-<body>
-    <div class="logobar">
-      <a href="https://www.stonybrook.edu/" target="_blank">
+  <div class="logobar">
+    <a href="https://www.stonybrook.edu/" target="_blank">
         <div class="left-section">
-          <img class="logo" src="./images/stony-brook-university-logo-horizontal-white-300.png">
-        </div></a>
-        <div class="right-section">
-            | Log into the Database
-          </div>
+            <img class="logo" src="./images/stony-brook-university-logo-horizontal-white-300.png">
+        </div>
+    </a>
+    <div class="right-section">
+        | The Diatomic Molecular Spectroscopy Database
     </div>
-    
+</div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="your-login-script-here" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
 </body>
 </html>
