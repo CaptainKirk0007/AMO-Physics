@@ -500,6 +500,9 @@ h2 {
     margin: 5px;
   }
 
+  .intro{
+    width: 300px;
+  }
   /* Adjust right-section size and margin */
   .right-section {
     margin: 15px 0 0 10px;
